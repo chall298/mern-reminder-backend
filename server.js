@@ -15,3 +15,7 @@ app.use('/api/reminders', reminderRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+require('dotenv').config();
+const PORTs = process.env.PORT || 5000;
+const MONGO_URI = process.env.MONGO_URI;
